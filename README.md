@@ -1,6 +1,6 @@
 # My Personal Website
 
-Access website: [margueriteandreca.github.io/my-first-website](margueriteandreca.github.io/my-first-website)
+Access website: [margueriteandreca.github.io/my-first-website](https://margueriteandreca.github.io/my-first-website)
 
 
 My first website is divided into three sections - the introduction, the "About Me" and a last section containing both "My Goals" and "Contact". To navigate towards different sections, I implemeted links to smooth scroll to their resepective anchor id.
