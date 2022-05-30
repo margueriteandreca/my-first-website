@@ -1,18 +1,31 @@
-* {
-    font-family: Verdana, Helvetica, sans-serif;  
-}
-
-p#subtitle {
-    color: rgb(183, 181, 181);
-    margin-top: 0;
-   
-}
-
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
     background: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+p#subtitle {
+    color:rgb(131, 129, 129);
+    margin-top: 0;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p#hi-text {
+    color: rgb(131, 129, 129);
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 550px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#hi-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
 }
 
 div.container {
@@ -31,7 +44,7 @@ section {
 
 
 h1 {
-    color: rgb(183, 181, 181);
+    color: rgb(51, 67, 138);
     font-size: 46px;
     text-align: center;
     margin-top: 0;
@@ -40,22 +53,37 @@ h1 {
 
 div #navigation {
     text-align: center;
+    margin-top: 10px;
 }
 
 #about-me-nav, #my-goals-nav, #contact-nav {
     padding-left: 10px;
     padding-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: rgb(51, 67, 138);
 } 
 
 h3 {
-    color: rgb(183, 181, 181);
-    font-size: 24px;
+    color: rgb(51, 67, 138);
+    font-size: 26px;
     text-align: start;
-    margin-top: 50px;
+    margin-top: 100px;
+}
+
+h3#contact {
+    text-align: center;
+}
+
+.horizontal-lines {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(51, 67, 138, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 a:link, a:visited {
-    color: rgb(183, 181, 181);
+    color: rgb(131, 129, 129);
     text-decoration: none;
 
 }
@@ -66,16 +94,21 @@ a:hover {
 
 }
 
-
 div.centered-body {
     margin: auto;
     width: 50%;
     height: 100%;
+    
+}
+
+#contact-div {
+    max-height: 30vh;
 }
 
 #contact-info {
-    color: rgb(183, 181, 181);
+    color: rgb(131, 129, 129);
     text-align: center;
+    margin-bottom: 0px;
 
 }
 
@@ -84,26 +117,12 @@ p.sections {
     text-align: left;
 }
 
-
-#hi-text {
-    color: rgb(183, 181, 181);
-    text-align: left;
-    margin-bottom: 0;
-    width: 430px;
-
-}
-
-#hi-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-}
-
 #social-media {
     display: flex;
     flex-direction: row;
     justify-content: center;    
+    margin-top: 20px;
+    margin-bottom: 100px;
 }
 
 .social-media-logos {
@@ -111,7 +130,6 @@ p.sections {
     padding-left: 5px;
     padding-right: 5px;
     opacity: 0.7;
-    
 }
 
 .row {
@@ -122,11 +140,13 @@ p.sections {
 .column {
     display: flex;
     flex-direction: column;
+    width: 100vw
 }
 
 #marguerite-pic {
     height: 150px;
     width: 150px;
+    margin-top: 100px;
     margin-left: 50px;
     margin-right: 20px;
     border-radius: 100px;
@@ -134,14 +154,27 @@ p.sections {
 }
 #marguerite-pic:hover {
     transform: scale(1.2);
-    
-  }
+}
 
 #main-pic {
     height: 75vh;
+    width: 80vw;
+}
+#intro-pic {
     width: 100vw;
-    opacity: 0.7;
-     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hover-img {
+    color:rgb(51, 67, 138);;
+    text-decoration: underline;
+
+}
+
+#hover-img:hover {
+    text-decoration: none;
 }
 
 #floating-button {
@@ -151,7 +184,7 @@ p.sections {
     right:50px;
     height: 50px;
     width: 50px;
-    background-color: aliceblue;
+    background-color: whitesmoke;
     border-radius: 100px;
     align-items: center;
     justify-content: center;
@@ -163,5 +196,16 @@ p.sections {
     border-radius: 100px;
     background-color: white;
     opacity: 0.40;
+    filter: drop-shadow(0 0 0.75rem black)
 
+}
+
+#expanded-image {
+    position:fixed;
+    bottom: 7vh;
+    left: 7vw;
+    height: 300px;
+    width: 230px;
+    padding: 10px;
+    border-radius: 50px;
 }
